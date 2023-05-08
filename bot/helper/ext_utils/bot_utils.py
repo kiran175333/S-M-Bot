@@ -309,8 +309,6 @@ def get_readable_message():
         bmsg = f"{TASKS_COUNT}"
         bmsg += f"<b>• Bot Uptime:</b> {get_readable_time(time() - botStartTime)}"
         bmsg += f"\n<b>• Free Disk:</b> {get_readable_file_size(disk_usage(DOWNLOAD_DIR).free)}"
-        bmsg += f"\n<b>• Total Downloading Speed:</b> {get_readable_file_size(dl_speed)}/s"
-        bmsg += f"\n<b>• Total Uploading Speed:</b> {get_readable_file_size(up_speed)}/s"
         buttons = ButtonMaker()
         buttons.sbutton("Refresh", "status refresh")
         buttons.sbutton("Statistics", str(THREE))
